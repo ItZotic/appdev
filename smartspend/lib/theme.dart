@@ -8,9 +8,11 @@ ThemeData buildSmartTheme() {
     colorScheme: const ColorScheme.light(
       primary: primaryColor,
       secondary: Color(0xFF5B61F6),
+      background: Color(0xFFF7F8FC),
       surface: Colors.white,
       onPrimary: Colors.white,
       onSurface: Color(0xFF222436),
+      onBackground: Color(0xFF131526),
     ),
     useMaterial3: true,
     fontFamily: 'Roboto',
@@ -24,7 +26,7 @@ ThemeData buildSmartTheme() {
       elevation: 0,
       foregroundColor: darkColor,
     ),
-    cardTheme: CardThemeData(
+    cardTheme: CardTheme(
       color: Colors.white,
       elevation: 0,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),

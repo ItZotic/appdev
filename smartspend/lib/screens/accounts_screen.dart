@@ -148,7 +148,7 @@ class _AccountCard extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           CircleAvatar(
-            backgroundColor: Colors.white.withValues(alpha: 0.2),
+            backgroundColor: Colors.white.withOpacity(0.2),
             child: const Icon(Icons.account_balance_wallet_outlined, color: Colors.white),
           ),
           Text(

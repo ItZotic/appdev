@@ -12,7 +12,7 @@ class SettingsScreen extends StatelessWidget {
       body: ListView(
         padding: const EdgeInsets.all(20),
         children: [
-          const _SectionHeader(title: 'Account'),
+          _SectionHeader(title: 'Account'),
           SwitchListTile(
             value: true,
             onChanged: (_) {},
@@ -33,7 +33,7 @@ class SettingsScreen extends StatelessWidget {
             onTap: () {},
           ),
           const Divider(),
-          const _SectionHeader(title: 'Security'),
+          _SectionHeader(title: 'Security'),
           SwitchListTile(
             value: true,
             onChanged: (_) {},

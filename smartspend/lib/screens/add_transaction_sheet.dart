@@ -74,9 +74,7 @@ class _AddTransactionSheetState extends State<AddTransactionSheet> {
                   _type == TransactionType.expense,
                   _type == TransactionType.income,
                 ],
-                fillColor: Theme.of(context)
-                    .colorScheme.primary
-                    .withValues(alpha: 0.1),
+                fillColor: Theme.of(context).colorScheme.primary.withOpacity(0.1),
                 selectedColor: Theme.of(context).colorScheme.primary,
                 onPressed: (index) {
                   setState(() {
@@ -139,7 +137,7 @@ class _AddTransactionSheetState extends State<AddTransactionSheet> {
               ),
               const SizedBox(height: 16),
               DropdownButtonFormField<String>(
-                initialValue: _category,
+                value: _category,
                 decoration: const InputDecoration(labelText: 'Category'),
                 items: const [
                   'Food & Dining',
@@ -158,7 +156,7 @@ class _AddTransactionSheetState extends State<AddTransactionSheet> {
               ),
               const SizedBox(height: 16),
               DropdownButtonFormField<String>(
-                initialValue: _account,
+                value: _account,
                 decoration: const InputDecoration(labelText: 'Account'),
                 items: finance.accounts.keys
                     .map(

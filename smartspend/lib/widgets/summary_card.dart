@@ -31,7 +31,7 @@ class SummaryCard extends StatelessWidget {
         children: [
           CircleAvatar(
             radius: 22,
-            backgroundColor: iconColor.withValues(alpha: 0.1),
+            backgroundColor: iconColor.withOpacity(0.1),
             child: Icon(icon, color: iconColor),
           ),
           const SizedBox(height: 12),

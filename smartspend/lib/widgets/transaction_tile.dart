@@ -25,7 +25,7 @@ class TransactionTile extends StatelessWidget {
         children: [
           CircleAvatar(
             radius: 24,
-            backgroundColor: amountColor.withValues(alpha: 0.1),
+            backgroundColor: amountColor.withOpacity(0.1),
             child: Icon(transaction.icon, color: amountColor),
           ),
           const SizedBox(width: 14),

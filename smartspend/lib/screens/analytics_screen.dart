@@ -135,10 +135,10 @@ class AnalyticsScreen extends StatelessWidget {
                     height: 220,
                     child: LineChart(
                       LineChartData(
-                        gridData: const FlGridData(show: false),
-                        borderData: const FlBorderData(show: false),
+                        gridData: FlGridData(show: false),
+                        borderData: FlBorderData(show: false),
                         titlesData: FlTitlesData(
-                          leftTitles: const AxisTitles(
+                          leftTitles: AxisTitles(
                             sideTitles: SideTitles(showTitles: true, reservedSize: 42),
                           ),
                           rightTitles: const AxisTitles(sideTitles: SideTitles(showTitles: false)),
@@ -258,7 +258,7 @@ class _AnalyticsSummaryCard extends StatelessWidget {
         children: [
           CircleAvatar(
             radius: 22,
-            backgroundColor: color.withValues(alpha: 0.15),
+            backgroundColor: color.withOpacity(0.15),
             child: Icon(icon, color: color),
           ),
           const SizedBox(height: 12),
@@ -291,7 +291,7 @@ class _LegendChip extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
       decoration: BoxDecoration(
-        color: color.withValues(alpha: 0.15),
+        color: color.withOpacity(0.15),
         borderRadius: BorderRadius.circular(20),
       ),
       child: Row(
