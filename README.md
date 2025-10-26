@@ -13,7 +13,6 @@ SmartSpend is a Flutter application that helps students and young professionals 
 1. Install [Flutter](https://docs.flutter.dev/get-started/install).
 2. From the repository root run:
    ```bash
-   cd smartspend
    flutter pub get
    flutter run
    ```
