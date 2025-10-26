@@ -40,7 +40,6 @@ The home shell (`HomeShell`) uses a `NavigationBar` with five destinations. An `
 1. Install Flutter 3.13+.
 2. From the repository root execute:
    ```bash
-   cd smartspend
    flutter pub get
    flutter run
    ```
